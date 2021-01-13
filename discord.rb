@@ -2,7 +2,7 @@ require 'discordrb/webhooks'
 require 'pry'
 require 'discordrb'
 
-bot = Discordrb::Bot.new token: 'Nzk4OTgwODQxNDMwNzEyMzk0.X_865A.0u-Ax9RoshZb4Ekdv8Jhl4Ht-Nc'
+bot = Discordrb::Bot.new token: ENV['DISCORD_TOKEN']
 
 bot.message(with_text: 'Ping!') do |event|
   event.respond 'Pong!'
